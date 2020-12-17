@@ -1,0 +1,105 @@
+/*header*/
+.container-fluid {
+  height: 6.4rem;
+  /*  background-color: #f8f9fa;*/
+  background-color: #343a40;
+  position: fixed;
+  z-index: 1
+}
+
+.hdr-sec {
+  height: 6.8rem;
+}
+
+.drop-option {
+  font-size: 1.5rem;
+  font-style: bold;
+}
+
+.hdr-sec-2 {
+  margin-top: 1.5rem;
+  float: right;
+}
+
+.nav-menu {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*body*/
+#container-fluid {
+  height: 43rem;
+  background-image: url(/images/intro-bg.png);
+  background-size: 100%;
+  opacity: 0.8;
+  position: relative;
+  z-index: 0;
+  top: 6rem;
+}
+
+.intro-header {
+  margin: 11rem 8rem;
+  font-family: 'Anton', sans-serif;
+}
+
+.intro-footer {
+  margin-top: -9rem;
+  margin-left: 8rem;
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*register page design*/
+#register-fluid {
+  height: 26rem;
+  width: 50rem;
+}
+
+.register-page {
+  display: none;
+  background-color: #f8f9fa;
+}
+
+.register-title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.get-start {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.intro-sec {
+  height: 40rem;
+}
+
+.card-categories {
+  height: 50rem;
+  margin-top: 2.8rem;
+  z-index: -1;
+}
+
+.cat-card {
+  height: 38rem;
+  width: 30rem;
+  margin-left: 52rem;
+  margin-top: 3rem;
+}
+
+/*footer*/
+#footer {
+  padding-top: 2.5rem;
+  height: 5rem;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.content {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

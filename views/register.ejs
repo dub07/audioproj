@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <%- include('portials/script') -%>
+</head>
+
+<body>
+
+  <hr>
+  <div id="register-fluid">
+    <form class="register-page" action="/register" method="post">
+      <span class="register-title">Register<hr><span>
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control form-control-lg" placeholder= "First name" name="firstName" required>
+        </div>
+
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control form-control-lg" placeholder="Last name" name="lastName" required>
+        </div>
+
+        <div class="form-group col-md-12">
+
+          <input type="email" class="form-control form-control-lg" id="inputEmail4" placeholder="Email" name="email_id" required>
+        </div>
+
+      </div>
+      <div class="form-group">
+
+        <input type="text" class="form-control form-control-lg" id="inputAddress" placeholder="1234 Main St" name="address_1" required>
+      </div>
+      <div class="form-group">
+
+        <input type="text" class="form-control form-control-lg" id="inputAddress2" placeholder="Apartment, studio, or floor" name="address_2" required>
+      </div>
+      <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control form-control-lg" id="inputCity" name="address_city" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control form-control-lg" name="address_state" required>
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control form-control-lg" id="inputZip" name="address_zip" required>
+    </div>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary btn-lg">Register</button>
+</form>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+  $(".register-pop").click(function(){
+    $("form").toggle();
+  });
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<body>
+<%- include('portials/header') -%>
+
+<div id="container-fluid">
+  <div class="row">
+
+    <div class="intro-sec">
+
+
+      <div class="intro-header">
+        <h2>Here is my short Introduction</h2>
+        <audio controls id="music">
+        <source src="audio/khaab.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+
+        <p>Click the buttons to play or pause the music.</p>
+
+        <button onclick="play()" type="button">Play </button>
+        <button onclick="pause()" type="button">Pause</button>
+
+        <script>
+        var myMusic= document.getElementById("music");
+        function play() {
+        myMusic.play();
+        }
+
+        function pause() {
+        myMusic.pause();
+        }
+        </script>
+      </div>
+
+  </div>
+
+
+
+  <!-- Adding music section -->
+
+
+
+<%- include('portials/footer') -%>
+</body>
